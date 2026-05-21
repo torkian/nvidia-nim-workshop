@@ -60,25 +60,25 @@ print(ask(
 
 # ── Step 3: Your first "AI app" — a campus assistant ─────────────────────────
 campus_info = """
-The AI Club meets every Thursday at 5 PM in the engineering building, room 204.
-The GPU computing lab is open Monday to Friday from 10 AM to 6 PM.
-Students can join the NVIDIA Developer Program for free to access tools and learning resources.
-The next workshop will cover Retrieval Augmented Generation (RAG).
-Office hours for the AI/ML faculty are Tuesdays 2-4 PM.
+The USC AI Club meets every Thursday at 5 PM in the engineering building, room 204.
+The USC GPU computing lab is open Monday to Friday from 10 AM to 6 PM.
+USC students can join the NVIDIA Developer Program for free to access tools and learning resources.
+The next USC AI Club workshop will cover Retrieval Augmented Generation (RAG).
+Office hours for the USC AI/ML faculty are Tuesdays 2-4 PM.
 """
 
-assistant_system_prompt = f"""You are a campus assistant. Answer ONLY using the
+assistant_system_prompt = f"""You are a USC campus assistant. Answer ONLY using the
 information in CAMPUS INFO below. If the answer is not in there, say "I don't
-have that information — check with the AI Club."
+have that information — check with the USC AI Club."
 
 CAMPUS INFO:
 {campus_info}
 """
 
-print("\n── Step 3: Campus assistant ──")
+print("\n── Step 3: USC campus assistant ──")
 for question in [
-    "When does the AI Club meet?",
-    "Is the GPU lab open on Saturday?",
+    "When does the USC AI Club meet?",
+    "Is the USC GPU lab open on Saturday?",
     "What's the wifi password?",  # not in the data — should refuse
 ]:
     print(f"\nQ: {question}")
