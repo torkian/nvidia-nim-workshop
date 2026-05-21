@@ -1,9 +1,9 @@
 ---
-title: From First API Call to Working Agent: A Complete NVIDIA NIM Tutorial
+title: "From First API Call to Working Agent: A Complete NVIDIA NIM Tutorial"
 published: false
-description: Build a campus assistant in five stages: hosted NVIDIA NIM call, embedding RAG with query/passage inputs, guardrails, local NIM option, and a tool-calling agent.
+description: "Build a campus assistant in five stages: hosted NVIDIA NIM call, embedding RAG with query/passage inputs, guardrails, local NIM option, and a tool-calling agent."
 tags: nvidia, ai, python, tutorial
-cover_image: <upload a banner; use the flow diagram>
+cover_image:
 canonical_url:
 ---
 
