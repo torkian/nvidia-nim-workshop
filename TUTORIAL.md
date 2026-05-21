@@ -512,7 +512,7 @@ The tools are intentionally tiny. The useful pattern is the loop: ask the model,
 Workshop materials are open source:
 
 **Repo:** `github.com/torkian/01-nvidia-nim-workshop`
-**One-click Colab:** [Open the notebook](<paste the Colab URL>)
+**One-click Colab:** [Open the notebook](https://colab.research.google.com/github/torkian/01-nvidia-nim-workshop/blob/main/notebook.ipynb)
 
 Included: a notebook version, a local Python script, a 30-minute presenter script, and a 1-page student handout.
 

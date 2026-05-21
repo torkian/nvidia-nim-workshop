@@ -1,5 +1,7 @@
 # Build Your First AI App with NVIDIA NIM
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/01-nvidia-nim-workshop/blob/main/notebook.ipynb)
+
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
 **Audience:** university students, AI clubs, community devs. No GPU required. No CUDA. Just a browser.
