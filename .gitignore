@@ -1,6 +1,14 @@
+# Secrets
 .env
+
+# Python
 __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+
+# Private authoring & distribution (not for the public repo)
+TUTORIAL.md
 TUTORIAL_PART1_BACKUP.md
+POSTING.md
+posts/

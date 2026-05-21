@@ -1,8 +1,8 @@
 # Build Your First AI App with NVIDIA NIM — 1-page handout
 
 ## Run it again later
-**Colab:** https://colab.research.google.com/github/torkian/01-nvidia-nim-workshop/blob/main/notebook.ipynb
-**Repo:** `github.com/torkian/01-nvidia-nim-workshop`
+**Colab:** https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb
+**Repo:** `github.com/torkian/nvidia-nim-workshop`
 **API key:** https://build.nvidia.com/ → any model → *Get API Key*
 
 ## The 10-line app you built

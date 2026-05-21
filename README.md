@@ -1,6 +1,6 @@
 # Build Your First AI App with NVIDIA NIM
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/01-nvidia-nim-workshop/blob/main/notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb)
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -34,15 +34,15 @@ That's it. No GPU, no Docker, no CUDA.
 
 ### Option A — Colab (recommended for the workshop)
 
-Click: **[Open in Colab](#)** *(replace this link after you push to GitHub — see "Posting & sharing" below)*
+Click the **Open in Colab** badge at the top of this README.
 
 In the first cell, paste your API key when prompted. Run all cells.
 
 ### Option B — Local Python
 
 ```bash
-git clone https://github.com/torkian/01-nvidia-nim-workshop.git
-cd 01-nvidia-nim-workshop
+git clone https://github.com/torkian/nvidia-nim-workshop.git
+cd nvidia-nim-workshop
 cp .env.example .env          # then edit .env and paste your NVIDIA_API_KEY
 pip install -r requirements.txt
 python app.py
@@ -94,13 +94,13 @@ The goal: a student should be able to go from "saw the flyer" to "running code" 
 
 **Tier 1 — the canonical home (do this first):**
 
-- **GitHub public repo** — `github.com/torkian/01-nvidia-nim-workshop`
+- **GitHub public repo** — `github.com/torkian/nvidia-nim-workshop`
   - This is the link on the flyer, in the slides, and on your name tag.
   - Add a Colab badge to the README so students click *one button* to run.
 
 - **Google Colab badge** — add this to the top of `README.md` once you know the repo URL:
   ```markdown
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/01-nvidia-nim-workshop/blob/main/notebook.ipynb)
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb)
   ```
   Colab pulls the notebook straight from GitHub. No download. No install.
 

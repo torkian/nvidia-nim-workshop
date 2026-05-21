@@ -105,7 +105,7 @@ Run Cell 4. Show the three Q&A:
 
 ## Slide 7 — Take it home (27–29)
 
-- Repo: `github.com/torkian/01-nvidia-nim-workshop`
+- Repo: `github.com/torkian/nvidia-nim-workshop`
 - Fork it. Replace `campus_info` with *your* data. Show me on Discord.
 - Join the NVIDIA Developer Program (free).
 - Star the repo if it helped.
