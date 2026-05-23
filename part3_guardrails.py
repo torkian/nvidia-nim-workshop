@@ -27,13 +27,13 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-CHAT_MODEL = "meta/llama-3.1-8b-instruct"
+MODEL = "meta/llama-3.1-8b-instruct"
 EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
 
 
 def ask(system_prompt: str, user_message: str) -> str:
     response = client.chat.completions.create(
-        model=CHAT_MODEL,
+        model=MODEL,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message},
