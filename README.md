@@ -4,6 +4,8 @@
 [![Workshop 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb) Workshop 1 — First API Call
 &nbsp;
 [![Workshop 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part2_rag.ipynb) Workshop 2 — Embedding-based RAG
+&nbsp;
+[![Workshop 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part3_guardrails.ipynb) Workshop 3 — Guardrails
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -71,10 +73,12 @@ Student handout: see [`HANDOUT.md`](HANDOUT.md).
 ## Files in this repo
 
 ```
-notebook.ipynb     — Workshop 1 Colab notebook (first API call)
-app.py             — Workshop 1 local Python script
-part2_rag.ipynb    — Workshop 2 Colab notebook (embedding-based RAG)
-part2_rag.py       — Workshop 2 local Python script
+notebook.ipynb            — Workshop 1 Colab notebook (first API call)
+app.py                    — Workshop 1 local Python script
+part2_rag.ipynb           — Workshop 2 Colab notebook (embedding-based RAG)
+part2_rag.py              — Workshop 2 local Python script
+part3_guardrails.ipynb    — Workshop 3 Colab notebook (guardrails)
+part3_guardrails.py       — Workshop 3 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -87,7 +91,7 @@ HANDOUT.md         — 1-page student takeaway
 
 1. **Build Your First AI App with NVIDIA NIM** — `notebook.ipynb` + `app.py`
 2. **Embedding-based RAG with NVIDIA NIM** — `part2_rag.py` (uses `nv-embedqa-e5-v5`)
-3. Guardrails & Evaluation
+3. **Guardrails — scoped prompt + grounding check** — `part3_guardrails.py`
 4. Run It Locally — NIM on Your Own GPU
 5. From Chatbot to Agent
 
