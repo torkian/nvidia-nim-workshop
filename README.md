@@ -1,6 +1,9 @@
 # Build Your First AI App with NVIDIA NIM
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb)
+**Open in Colab:**
+[![Workshop 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/notebook.ipynb) Workshop 1 — First API Call
+&nbsp;
+[![Workshop 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part2_rag.ipynb) Workshop 2 — Embedding-based RAG
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -68,9 +71,10 @@ Student handout: see [`HANDOUT.md`](HANDOUT.md).
 ## Files in this repo
 
 ```
-notebook.ipynb     — Workshop 1 Colab notebook (the thing students run)
+notebook.ipynb     — Workshop 1 Colab notebook (first API call)
 app.py             — Workshop 1 local Python script
-part2_rag.py       — Workshop 2 (embedding-based RAG with NVIDIA NIM)
+part2_rag.ipynb    — Workshop 2 Colab notebook (embedding-based RAG)
+part2_rag.py       — Workshop 2 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
