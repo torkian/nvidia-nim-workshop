@@ -68,9 +68,10 @@ Student handout: see [`HANDOUT.md`](HANDOUT.md).
 ## Files in this repo
 
 ```
-notebook.ipynb     — Colab-ready, the thing students run
-app.py             — same logic as a local Python script
-requirements.txt   — openai client + python-dotenv
+notebook.ipynb     — Workshop 1 Colab notebook (the thing students run)
+app.py             — Workshop 1 local Python script
+part2_rag.py       — Workshop 2 (embedding-based RAG with NVIDIA NIM)
+requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
 HANDOUT.md         — 1-page student takeaway
@@ -80,10 +81,10 @@ HANDOUT.md         — 1-page student takeaway
 
 ## The workshop series
 
-1. **Build Your First AI App with NVIDIA NIM** ← you are here
-2. From AI App to RAG: Giving Your Model Knowledge (LangChain + NIM)
+1. **Build Your First AI App with NVIDIA NIM** — `notebook.ipynb` + `app.py`
+2. **Embedding-based RAG with NVIDIA NIM** — `part2_rag.py` (uses `nv-embedqa-e5-v5`)
 3. Guardrails & Evaluation
-4. Run It Locally: NIM on Your Own GPU
+4. Run It Locally — NIM on Your Own GPU
 5. From Chatbot to Agent
 
 ---
