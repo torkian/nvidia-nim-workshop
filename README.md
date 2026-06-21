@@ -10,6 +10,8 @@
 [![Workshop 4](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part4_local_nim.ipynb) Workshop 4 — Local NIM on your own GPU
 &nbsp;
 [![Workshop 5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part5_agent.ipynb) Workshop 5 — From Chatbot to Agent (tool calling)
+&nbsp;
+[![Workshop 6](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part6_react_agent.ipynb) Workshop 6 — Multi-Step Agent (ReAct loop)
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -67,7 +69,7 @@ python app.py
 | 5–12 | First model call | Run the first cell. One API call. Change the system prompt. See it change. |
 | 12–22| Campus assistant | Add a small knowledge base. Inject it as context. Answer questions about *your* data. |
 | 22–27| Preview real RAG | Show that we just did manual retrieval. Next workshop: automate it with LangChain. |
-| 27–30| Wrap & roadmap | The 5-workshop path. Where to go next. |
+| 27–30| Wrap & roadmap | The full workshop path. Where to go next. |
 
 Full presenter script: see [`SLIDES.md`](SLIDES.md).
 Student handout: see [`HANDOUT.md`](HANDOUT.md).
@@ -87,6 +89,8 @@ part4_local_nim.ipynb     — Workshop 4 Colab notebook (run NIM on your GPU)
 part4_local_nim.py        — Workshop 4 local Python script
 part5_agent.ipynb         — Workshop 5 Colab notebook (tool-calling agent)
 part5_agent.py            — Workshop 5 local Python script
+part6_react_agent.ipynb   — Workshop 6 Colab notebook (multi-step ReAct agent)
+part6_react_agent.py      — Workshop 6 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -102,6 +106,7 @@ HANDOUT.md         — 1-page student takeaway
 3. **Guardrails — scoped prompt + grounding check** — `part3_guardrails.py`
 4. **Run NIM on Your Own GPU** — `part4_local_nim.py` (configurable endpoint via `NIM_BASE_URL`)
 5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with Llama 3.3 70B)
+6. **Multi-Step Agent (ReAct)** — `part6_react_agent.py` (chaining tools in a Reason/Act/Observe loop)
 
 ---
 
