@@ -12,6 +12,8 @@
 [![Workshop 5](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part5_agent.ipynb) Workshop 5 — From Chatbot to Agent (tool calling)
 &nbsp;
 [![Workshop 6](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part6_react_agent.ipynb) Workshop 6 — Multi-Step Agent (ReAct loop)
+&nbsp;
+[![Workshop 7](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part7_memory_agent.ipynb) Workshop 7 — Memory (multi-turn conversation)
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -56,7 +58,8 @@ git clone https://github.com/torkian/nvidia-nim-workshop.git
 cd nvidia-nim-workshop
 cp .env.example .env          # then edit .env and paste your NVIDIA_API_KEY
 pip install -r requirements.txt
-python app.py
+python app.py                 # Workshop 1 — each later workshop has its own script,
+                              # e.g. python part7_memory_agent.py
 ```
 
 ---
@@ -91,6 +94,8 @@ part5_agent.ipynb         — Workshop 5 Colab notebook (tool-calling agent)
 part5_agent.py            — Workshop 5 local Python script
 part6_react_agent.ipynb   — Workshop 6 Colab notebook (multi-step ReAct agent)
 part6_react_agent.py      — Workshop 6 local Python script
+part7_memory_agent.ipynb  — Workshop 7 Colab notebook (multi-turn memory agent)
+part7_memory_agent.py     — Workshop 7 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -107,6 +112,7 @@ HANDOUT.md         — 1-page student takeaway
 4. **Run NIM on Your Own GPU** — `part4_local_nim.py` (configurable endpoint via `NIM_BASE_URL`)
 5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with Llama 3.3 70B)
 6. **Multi-Step Agent (ReAct)** — `part6_react_agent.py` (chaining tools in a Reason/Act/Observe loop)
+7. **Memory (Multi-Turn)** — `part7_memory_agent.py` (a ChatSession that remembers the conversation)
 
 ---
 
