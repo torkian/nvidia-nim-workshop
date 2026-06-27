@@ -14,6 +14,8 @@
 [![Workshop 6](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part6_react_agent.ipynb) Workshop 6 — Multi-Step Agent (ReAct loop)
 &nbsp;
 [![Workshop 7](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part7_memory_agent.ipynb) Workshop 7 — Memory (multi-turn conversation)
+&nbsp;
+[![Workshop 8](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part8_streaming_agent.ipynb) Workshop 8 — Streaming (real-time token output)
 
 A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
 
@@ -96,6 +98,8 @@ part6_react_agent.ipynb   — Workshop 6 Colab notebook (multi-step ReAct agent)
 part6_react_agent.py      — Workshop 6 local Python script
 part7_memory_agent.ipynb  — Workshop 7 Colab notebook (multi-turn memory agent)
 part7_memory_agent.py     — Workshop 7 local Python script
+part8_streaming_agent.ipynb — Workshop 8 Colab notebook (streaming agent)
+part8_streaming_agent.py    — Workshop 8 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -113,6 +117,7 @@ HANDOUT.md         — 1-page student takeaway
 5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with Llama 3.3 70B)
 6. **Multi-Step Agent (ReAct)** — `part6_react_agent.py` (chaining tools in a Reason/Act/Observe loop)
 7. **Memory (Multi-Turn)** — `part7_memory_agent.py` (a ChatSession that remembers the conversation)
+8. **Streaming** — `part8_streaming_agent.py` (token-by-token real-time output, reassembling streamed tool calls)
 
 ---
 
