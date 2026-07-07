@@ -33,10 +33,11 @@ That's the whole thing. Everything else — RAG, agents, guardrails — is built
 3. **Ship it.** Wrap the function in a Flask or FastAPI endpoint. You now have an AI API.
 
 ## Where this goes next
-- **Workshop 2 — RAG with LangChain + NIM:** automate retrieval over many documents.
-- **Workshop 3 — Guardrails & Evaluation:** make it safe to ship.
+- **Workshop 2 — Embedding-based RAG with NIM:** automate retrieval with NVIDIA's embedding model — no framework needed.
+- **Workshop 3 — Guardrails:** a scoped prompt + a grounding check, so it's safe to ship.
 - **Workshop 4 — Run NIM locally on a GPU.**
-- **Workshop 5 — From Chatbot to Agent.**
+- **Workshop 5 — From Chatbot to Agent (tool calling).**
+- **Workshops 6–9 — Multi-step agents, memory, streaming, structured outputs.**
 
 ## Get plugged in
 - NVIDIA Developer Program (free): https://developer.nvidia.com/

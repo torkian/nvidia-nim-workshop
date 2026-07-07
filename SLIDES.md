@@ -80,8 +80,8 @@ Run Cell 3. Same question, "sarcastic professor" persona.
 
 Run Cell 4. Show the three Q&A:
 1. ✅ AI Club meeting — answered from data
-2. ✅ Saturday lab hours — *correctly* inferred from data
-3. ❌ Wifi password — *refused*
+2. ✅ Saturday lab hours — grounded inference: the data says Mon–Fri, so the model can say it's closed Saturday
+3. ❌ Wifi password — *refused* (not in the data at all)
 
 **Say:** "Look at answer 3. The model said 'I don't know.' That refusal — that's what separates a chatbot from an *app you can ship*."
 
@@ -92,14 +92,16 @@ Run Cell 4. Show the three Q&A:
 ## Slide 6 — The series (22–27)
 
 ```
-1. ✅ First AI App with NIM     ← today
-2. RAG with LangChain + NIM     ← next
-3. Guardrails & Evaluation
+1. ✅ First AI App with NIM       ← today
+2. Embedding-based RAG with NIM   ← next
+3. Guardrails
 4. Run NIM on your own GPU
 5. From Chatbot to Agent
+6-9. Multi-step agents, memory,
+     streaming, structured outputs
 ```
 
-**Say:** "Each workshop adds *one* capability. Show up to all five and you'll have built an agent."
+**Say:** "Each workshop adds *one* capability to the same app. Follow the series and you'll have built a production-style agent."
 
 ---
 

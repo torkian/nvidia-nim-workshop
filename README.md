@@ -16,10 +16,12 @@
 [![Workshop 7](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part7_memory_agent.ipynb) Workshop 7 — Memory (multi-turn conversation)
 &nbsp;
 [![Workshop 8](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part8_streaming_agent.ipynb) Workshop 8 — Streaming (real-time token output)
+&nbsp;
+[![Workshop 9](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part9_structured_output.ipynb) Workshop 9 — Structured Outputs (validated JSON)
 
-A 30-minute hands-on workshop. Students leave with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context — the foundation of every RAG app.
+A hands-on workshop series. Each part is ~30 minutes and adds exactly one capability to the same tiny app — from a first API call to a streaming, tool-using agent that returns structured JSON. Students leave Workshop 1 with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context.
 
-**Audience:** university students, AI clubs, community devs. No GPU required. No CUDA. Just a browser.
+**Audience:** university students, AI clubs, community devs. Workshops 1–3 and 5–9 need no GPU, no CUDA — just a browser. (Workshop 4, running NIM on your own hardware, is the optional exception: it needs an NVIDIA GPU and Docker.)
 
 ---
 
@@ -41,7 +43,9 @@ A tiny **campus assistant** that answers questions from a small knowledge base y
    - Easiest: a Google account (we'll use Colab — zero install)
    - Or: Python 3.10+ locally
 
-That's it. No GPU, no Docker, no CUDA.
+That's it. No GPU, no Docker, no CUDA — for everything except the optional Workshop 4 (local NIM), which needs an NVIDIA GPU and Docker.
+
+> **If a script hangs or returns 504/503:** the free hosted pool for `meta/llama-3.3-70b-instruct` (Workshops 5+) sometimes gets congested — that's NVIDIA-side, not your code. Wait and retry, or temporarily set `MODEL = "meta/llama-3.1-8b-instruct"` to keep working (tool-calling is less reliable on the smaller model).
 
 ---
 
@@ -66,14 +70,14 @@ python app.py                 # Workshop 1 — each later workshop has its own s
 
 ---
 
-## The 30-minute agenda
+## The 30-minute agenda (Workshop 1)
 
 | Time | Segment | What happens |
 |------|---------|--------------|
 | 0–5  | Set the stage | What NIM is. Why APIs, not just chat UIs. The flow diagram. |
 | 5–12 | First model call | Run the first cell. One API call. Change the system prompt. See it change. |
 | 12–22| Campus assistant | Add a small knowledge base. Inject it as context. Answer questions about *your* data. |
-| 22–27| Preview real RAG | Show that we just did manual retrieval. Next workshop: automate it with LangChain. |
+| 22–27| Preview real RAG | Show that we just did manual retrieval. Next workshop: automate it with embeddings — no framework needed. |
 | 27–30| Wrap & roadmap | The full workshop path. Where to go next. |
 
 Full presenter script: see [`SLIDES.md`](SLIDES.md).
@@ -100,6 +104,8 @@ part7_memory_agent.ipynb  — Workshop 7 Colab notebook (multi-turn memory agent
 part7_memory_agent.py     — Workshop 7 local Python script
 part8_streaming_agent.ipynb — Workshop 8 Colab notebook (streaming agent)
 part8_streaming_agent.py    — Workshop 8 local Python script
+part9_structured_output.ipynb — Workshop 9 Colab notebook (structured JSON output)
+part9_structured_output.py    — Workshop 9 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -118,6 +124,7 @@ HANDOUT.md         — 1-page student takeaway
 6. **Multi-Step Agent (ReAct)** — `part6_react_agent.py` (chaining tools in a Reason/Act/Observe loop)
 7. **Memory (Multi-Turn)** — `part7_memory_agent.py` (a ChatSession that remembers the conversation)
 8. **Streaming** — `part8_streaming_agent.py` (token-by-token real-time output, reassembling streamed tool calls)
+9. **Structured Outputs** — `part9_structured_output.py` (validated JSON contract: parse, validate, repair)
 
 ---
 

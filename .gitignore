@@ -12,3 +12,6 @@ TUTORIAL.md
 TUTORIAL_PART1_BACKUP.md
 POSTING.md
 posts/
+
+# Agent traces (Workshop 10) — contain user messages; never commit
+traces/
