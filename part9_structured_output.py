@@ -239,7 +239,7 @@ MAX_STEPS = 5
 def parse_json_object(text: str) -> dict:
     """Pull a JSON object out of the model's text and parse it.
 
-    Models sometimes wrap JSON in prose or ```json fences, so we take the span
+    Models sometimes wrap JSON in prose or fenced code blocks, so we take the span
     from the first '{' to the last '}'. Raises ValueError/JSONDecodeError if there
     is no parseable object."""
     start, end = text.find("{"), text.rfind("}")
