@@ -18,10 +18,12 @@
 [![Workshop 8](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part8_streaming_agent.ipynb) Workshop 8 — Streaming (real-time token output)
 &nbsp;
 [![Workshop 9](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part9_structured_output.ipynb) Workshop 9 — Structured Outputs (validated JSON)
+&nbsp;
+[![Workshop 10](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part10_traces.ipynb) Workshop 10 — Traces (JSONL observability)
 
 A hands-on workshop series. Each part is ~30 minutes and adds exactly one capability to the same tiny app — from a first API call to a streaming, tool-using agent that returns structured JSON. Students leave Workshop 1 with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context.
 
-**Audience:** university students, AI clubs, community devs. Workshops 1–3 and 5–9 need no GPU, no CUDA — just a browser. (Workshop 4, running NIM on your own hardware, is the optional exception: it needs an NVIDIA GPU and Docker.)
+**Audience:** university students, AI clubs, community devs. Workshops 1–3 and 5–10 need no GPU, no CUDA — just a browser. (Workshop 4, running NIM on your own hardware, is the optional exception: it needs an NVIDIA GPU and Docker.)
 
 ---
 
@@ -106,6 +108,8 @@ part8_streaming_agent.ipynb — Workshop 8 Colab notebook (streaming agent)
 part8_streaming_agent.py    — Workshop 8 local Python script
 part9_structured_output.ipynb — Workshop 9 Colab notebook (structured JSON output)
 part9_structured_output.py    — Workshop 9 local Python script
+part10_traces.ipynb           — Workshop 10 Colab notebook (JSONL traces)
+part10_traces.py              — Workshop 10 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -125,6 +129,7 @@ HANDOUT.md         — 1-page student takeaway
 7. **Memory (Multi-Turn)** — `part7_memory_agent.py` (a ChatSession that remembers the conversation)
 8. **Streaming** — `part8_streaming_agent.py` (token-by-token real-time output, reassembling streamed tool calls)
 9. **Structured Outputs** — `part9_structured_output.py` (validated JSON contract: parse, validate, repair)
+10. **Traces** — `part10_traces.py` (one JSONL line per turn: tools, latencies, validation, the final answer)
 
 ---
 
