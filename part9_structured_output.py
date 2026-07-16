@@ -280,7 +280,7 @@ def repair_answer_json(raw_text: str, errors: list) -> dict | None:
             max_tokens=800,
             messages=[
                 {"role": "system", "content": (
-                    "/no_think You fix malformed JSON. Return ONLY a single valid JSON object — "
+                    "/no_think\n\nYou fix malformed JSON. Return ONLY a single valid JSON object — "
                     "no prose, no code fences.")},
                 {"role": "user", "content": (
                     f"This response was supposed to match a schema but had these problems: "

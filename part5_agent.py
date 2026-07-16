@@ -180,7 +180,7 @@ def ask_agent(question: str) -> str:
         messages.append(message.model_dump(exclude_none=True))
 
         if not message.tool_calls:
-            return message.content
+            return message.content or "I could not generate an answer. Please try again."
 
         for tool_call in message.tool_calls:
             name = tool_call.function.name

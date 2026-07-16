@@ -269,7 +269,7 @@ class ChatSession:
 
             if not message.tool_calls:        # final answer for this turn
                 self._trim()
-                return message.content
+                return message.content or "I could not generate an answer. Please try again."
 
             for tool_call in message.tool_calls:
                 name = tool_call.function.name

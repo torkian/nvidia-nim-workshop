@@ -252,7 +252,7 @@ def run_agent(question: str, verbose: bool = True) -> str:
 
         # No tool call → the model is done and this is the final answer.
         if not message.tool_calls:
-            return message.content
+            return message.content or "I could not generate an answer. Please try again."
 
         # Otherwise: run every tool the model asked for, feed results back.
         for tool_call in message.tool_calls:

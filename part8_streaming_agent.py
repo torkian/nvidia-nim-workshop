@@ -265,7 +265,7 @@ class ChatSession:
 
             if not message.tool_calls:
                 self._trim()
-                return message.content
+                return message.content or "I could not generate an answer. Please try again."
 
             for tool_call in message.tool_calls:
                 try:
@@ -349,7 +349,7 @@ class ChatSession:
 
             if not tool_calls:                  # final answer already streamed
                 self._trim()
-                return text
+                return text or "I could not generate an answer. Please try again."
 
             for tc in tool_calls:               # run tools, then loop and stream again
                 try:
