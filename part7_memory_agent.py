@@ -41,7 +41,7 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "meta/llama-3.3-70b-instruct"   # same as Workshops 5-6 — reliable tool calling,
+MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # same as Workshops 5-6 — reliable tool calling,
                                          # and steadier across turns at low temperature.
 EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
 
@@ -198,7 +198,7 @@ available_tools = {
 }
 
 SYSTEM_PROMPT = (
-    "You are a USC campus assistant having an ongoing conversation with a student. "
+    "/no_think\n\nYou are a USC campus assistant having an ongoing conversation with a student. "
     "You remember everything said earlier in this conversation.\n\n"
     "When a question refers back to something already discussed — words like 'that', "
     "'those', 'then', 'it', or 'the second one' — resolve the reference from the "

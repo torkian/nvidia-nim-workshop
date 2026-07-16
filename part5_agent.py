@@ -27,10 +27,10 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "meta/llama-3.3-70b-instruct"   # bumped up from 3.1-8b in workshops 1-4 —
-                                         # tool calling is noticeably more reliable
-                                         # on the larger model, and that matters
-                                         # once an agent has to choose between tools.
+MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # switched from 3.1-8b in workshops 1-4 —
+                                         # this NVIDIA-tuned model is far more reliable
+                                         # at tool calling, which matters once an agent
+                                         # has to choose between tools instead of just chatting.
 EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
 
 
@@ -38,7 +38,7 @@ def ask(system_prompt: str, user_message: str) -> str:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": system_prompt},
+            {"role": "system", "content": "/no_think\n\n" + system_prompt},
             {"role": "user", "content": user_message},
         ],
         temperature=0.3,
@@ -155,7 +155,7 @@ def ask_agent(question: str) -> str:
         {
             "role": "system",
             "content": (
-                "You are a USC campus assistant with two tools: "
+                "/no_think\n\nYou are a USC campus assistant with two tools: "
                 "get_current_time and search_campus_info. "
                 "When the user asks something a tool can answer, call the tool, "
                 "then write the final answer based on the tool's result. "

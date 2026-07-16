@@ -37,8 +37,8 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "meta/llama-3.3-70b-instruct"   # same as Workshop 5 — the 70B model is
-                                         # far more reliable once the agent has to
+MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # same as Workshop 5 — this NVIDIA model
+                                         # is far more reliable once the agent has to
                                          # choose AND sequence multiple tools.
 EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
 
@@ -212,7 +212,7 @@ available_tools = {
 }
 
 SYSTEM_PROMPT = (
-    "You are a USC campus assistant that solves questions step by step using "
+    "/no_think\n\nYou are a USC campus assistant that solves questions step by step using "
     "tools. You have three tools: search_campus_info (find USC facts), "
     "get_current_time (today's date and time), and days_until_weekday (days "
     "from today until a weekday).\n\n"

@@ -7,8 +7,8 @@ other software can consume — the foundation the rest of the book builds on
 (evals assert on fields, an API returns this body, logs store it).
 
 The honest part: NVIDIA NIM exposes an OpenAI-compatible API, but strict schema
-enforcement (response_format with a json_schema) is NOT reliable on hosted open
-models like llama-3.3-70b, and it interacts badly with tool calling. So we don't
+enforcement (response_format with a json_schema) is NOT reliable across hosted
+open models, and it interacts badly with tool calling. So we don't
 depend on it. We ask for JSON in the prompt, then do the robust thing ourselves:
 parse it, validate it against our contract, and if it's wrong, make ONE repair
 call. If even that fails, we return a deterministic error object. No framework.
@@ -42,7 +42,7 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "meta/llama-3.3-70b-instruct"
+MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"
 EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
 
 LOCAL_TZ = "America/Los_Angeles"
@@ -207,7 +207,7 @@ CATEGORIES = {"campus_event", "campus_hours", "campus_resource", "comparison", "
 REQUIRED_KEYS = ("status", "answer", "category", "items", "missing", "sources")
 
 SYSTEM_PROMPT = (
-    "You are a USC campus assistant having an ongoing conversation with a student. "
+    "/no_think\n\nYou are a USC campus assistant having an ongoing conversation with a student. "
     "You remember everything said earlier in this conversation.\n\n"
     "When a question refers back to something already discussed — words like 'that', "
     "'those', 'then', 'it', or 'the second one' — resolve the reference from the "
@@ -280,7 +280,7 @@ def repair_answer_json(raw_text: str, errors: list) -> dict | None:
             max_tokens=800,
             messages=[
                 {"role": "system", "content": (
-                    "You fix malformed JSON. Return ONLY a single valid JSON object — "
+                    "/no_think You fix malformed JSON. Return ONLY a single valid JSON object — "
                     "no prose, no code fences.")},
                 {"role": "user", "content": (
                     f"This response was supposed to match a schema but had these problems: "

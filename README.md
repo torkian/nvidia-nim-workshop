@@ -47,7 +47,7 @@ A tiny **campus assistant** that answers questions from a small knowledge base y
 
 That's it. No GPU, no Docker, no CUDA — for everything except the optional Workshop 4 (local NIM), which needs an NVIDIA GPU and Docker.
 
-> **If a script hangs or returns 504/503:** the free hosted pool for `meta/llama-3.3-70b-instruct` (Workshops 5+) sometimes gets congested — that's NVIDIA-side, not your code. Wait and retry, or temporarily set `MODEL = "meta/llama-3.1-8b-instruct"` to keep working (tool-calling is less reliable on the smaller model).
+> **If a script hangs or returns 504/503:** the free hosted API Catalog occasionally congests a given model — that's NVIDIA-side, not your code. Wait and retry, or temporarily point `MODEL` at another tool-calling model on [build.nvidia.com](https://build.nvidia.com/) to keep working. (Workshops 5–10 default to `nvidia/llama-3.3-nemotron-super-49b-v1.5`, NVIDIA's reasoning-tuned model — reliable, though each call is slower than a small chat model.)
 
 ---
 
@@ -124,7 +124,7 @@ HANDOUT.md         — 1-page student takeaway
 2. **Embedding-based RAG with NVIDIA NIM** — `part2_rag.py` (uses `nv-embedqa-e5-v5`)
 3. **Guardrails — scoped prompt + grounding check** — `part3_guardrails.py`
 4. **Run NIM on Your Own GPU** — `part4_local_nim.py` (configurable endpoint via `NIM_BASE_URL`)
-5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with Llama 3.3 70B)
+5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with NVIDIA Nemotron 49B)
 6. **Multi-Step Agent (ReAct)** — `part6_react_agent.py` (chaining tools in a Reason/Act/Observe loop)
 7. **Memory (Multi-Turn)** — `part7_memory_agent.py` (a ChatSession that remembers the conversation)
 8. **Streaming** — `part8_streaming_agent.py` (token-by-token real-time output, reassembling streamed tool calls)

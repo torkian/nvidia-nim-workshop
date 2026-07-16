@@ -217,7 +217,7 @@ CATEGORIES = {"campus_event", "campus_hours", "campus_resource", "comparison", "
 REQUIRED_KEYS = ("status", "answer", "category", "items", "missing", "sources")
 
 SYSTEM_PROMPT = (
-    "You are a USC campus assistant having an ongoing conversation with a student. "
+    "/no_think\n\nYou are a USC campus assistant having an ongoing conversation with a student. "
     "You remember everything said earlier in this conversation.\n\n"
     "When a question refers back to something already discussed — words like 'that', "
     "'those', 'then', 'it', or 'the second one' — resolve the reference from the "
@@ -282,7 +282,7 @@ def repair_answer_json(raw_text: str, errors: list) -> dict | None:
             max_tokens=800,
             messages=[
                 {"role": "system", "content": (
-                    "You fix malformed JSON. Return ONLY a single valid JSON object — "
+                    "/no_think You fix malformed JSON. Return ONLY a single valid JSON object — "
                     "no prose, no code fences.")},
                 {"role": "user", "content": (
                     f"This response was supposed to match a schema but had these problems: "
