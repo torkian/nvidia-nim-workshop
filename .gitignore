@@ -15,3 +15,10 @@ posts/
 
 # Agent traces (Workshop 10) — contain user messages; never commit
 traces/
+
+# macOS junk
+.DS_Store
+
+# Broken Campus benchmark work — separate project, lives in its own repo; not part of the workshop
+broken-campus-staging/
+charts/

@@ -20,6 +20,8 @@
 [![Workshop 9](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part9_structured_output.ipynb) Workshop 9 — Structured Outputs (validated JSON)
 &nbsp;
 [![Workshop 10](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part10_traces.ipynb) Workshop 10 — Traces (JSONL observability)
+&nbsp;
+[![Workshop 11](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/torkian/nvidia-nim-workshop/blob/main/part11_evals.ipynb) Workshop 11 — Evals (test the agent like software)
 
 A hands-on workshop series. Each part is ~30 minutes and adds exactly one capability to the same tiny app — from a first API call to a streaming, tool-using agent that returns structured JSON. Students leave Workshop 1 with a working Python AI app that calls an NVIDIA-hosted model and answers questions using their own context.
 
@@ -110,6 +112,8 @@ part9_structured_output.ipynb — Workshop 9 Colab notebook (structured JSON out
 part9_structured_output.py    — Workshop 9 local Python script
 part10_traces.ipynb           — Workshop 10 Colab notebook (JSONL traces)
 part10_traces.py              — Workshop 10 local Python script
+part11_evals.ipynb            — Workshop 11 Colab notebook (eval harness)
+part11_evals.py               — Workshop 11 local Python script
 requirements.txt   — openai client + python-dotenv + numpy
 .env.example       — template for your API key
 SLIDES.md          — presenter notes / slide outline
@@ -130,6 +134,7 @@ HANDOUT.md         — 1-page student takeaway
 8. **Streaming** — `part8_streaming_agent.py` (token-by-token real-time output, reassembling streamed tool calls)
 9. **Structured Outputs** — `part9_structured_output.py` (validated JSON contract: parse, validate, repair)
 10. **Traces** — `part10_traces.py` (one JSONL line per turn: tools, latencies, validation, the final answer)
+11. **Evals** — `part11_evals.py` (a golden-set regression harness asserting on the JSON contract)
 
 ---
 
