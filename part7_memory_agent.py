@@ -41,9 +41,9 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # same as Workshops 5-6 — reliable tool calling,
+MODEL = "nvidia/nemotron-3-super-120b-a12b"   # same as Workshops 5-6 — reliable tool calling,
                                          # and steadier across turns at low temperature.
-EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
 
 LOCAL_TZ = "America/Los_Angeles"
 

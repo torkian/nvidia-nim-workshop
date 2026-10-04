@@ -50,8 +50,8 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"
-EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
+MODEL = "nvidia/nemotron-3-super-120b-a12b"
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
 
 LOCAL_TZ = "America/Los_Angeles"
 TRACE_PATH = Path(__file__).resolve().parent / "traces" / "campus_assistant.jsonl"

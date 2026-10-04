@@ -36,7 +36,7 @@ client = OpenAI(
     api_key=API_KEY or "not-needed-for-local-dev",
 )
 
-MODEL = "meta/llama-3.1-8b-instruct"
+MODEL = "nvidia/nemotron-3-super-120b-a12b"
 
 
 def ask(system_prompt: str, user_message: str) -> str:

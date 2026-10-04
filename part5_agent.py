@@ -27,11 +27,11 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # switched from 3.1-8b in workshops 1-4 —
+MODEL = "nvidia/nemotron-3-super-120b-a12b"   # the series' single model —
                                          # this NVIDIA-tuned model is far more reliable
                                          # at tool calling, which matters once an agent
                                          # has to choose between tools instead of just chatting.
-EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
 
 
 def ask(system_prompt: str, user_message: str) -> str:

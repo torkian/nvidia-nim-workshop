@@ -49,7 +49,7 @@ A tiny **campus assistant** that answers questions from a small knowledge base y
 
 That's it. No GPU, no Docker, no CUDA — for everything except the optional Workshop 4 (local NIM), which needs an NVIDIA GPU and Docker.
 
-> **If a script hangs or returns 504/503:** the free hosted API Catalog occasionally congests a given model — that's NVIDIA-side, not your code. Wait and retry, or temporarily point `MODEL` at another tool-calling model on [build.nvidia.com](https://build.nvidia.com/) to keep working. (Workshops 5–10 default to `nvidia/llama-3.3-nemotron-super-49b-v1.5`, NVIDIA's reasoning-tuned model — reliable, though each call is slower than a small chat model.)
+> **If a script hangs or returns 504/503:** the free hosted API Catalog occasionally congests a given model — that's NVIDIA-side, not your code. Wait and retry, or temporarily point `MODEL` at another tool-calling model on [build.nvidia.com](https://build.nvidia.com/) to keep working. (Workshops 5–10 default to `nvidia/nemotron-3-super-120b-a12b`, NVIDIA's reasoning-tuned model — reliable, though each call is slower than a small chat model.)
 
 ---
 

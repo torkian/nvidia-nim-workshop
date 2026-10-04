@@ -37,10 +37,10 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "nvidia/llama-3.3-nemotron-super-49b-v1.5"   # same as Workshop 5 — this NVIDIA model
+MODEL = "nvidia/nemotron-3-super-120b-a12b"   # same as Workshop 5 — this NVIDIA model
                                          # is far more reliable once the agent has to
                                          # choose AND sequence multiple tools.
-EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
 
 LOCAL_TZ = "America/Los_Angeles"        # USC campus time zone — used by the clock
                                          # and date tools so "today" is consistent.
