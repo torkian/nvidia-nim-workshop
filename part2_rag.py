@@ -3,7 +3,7 @@ Workshop 2 — From Manual RAG to Real Retrieval: Embedding-Based RAG with NVIDI
 Local Python version. The same code runs in Colab — see the dev.to tutorial.
 
 What this file demonstrates:
-  1. NVIDIA's nv-embedqa-e5-v5 embedding model with the query/passage distinction.
+  1. NVIDIA's nemotron-3-embed-1b embedding model with the query/passage distinction.
   2. Cosine similarity over a tiny knowledge base — no vector database needed.
   3. Retrieval-augmented ask() that swaps the hardcoded campus_info from Part 1
      for a real retrieve_context() call.
@@ -29,15 +29,15 @@ client = OpenAI(
     api_key=API_KEY,
 )
 
-MODEL = "meta/llama-3.1-8b-instruct"
-EMBED_MODEL = "nvidia/nv-embedqa-e5-v5"
+MODEL = "nvidia/nemotron-3-super-120b-a12b"
+EMBED_MODEL = "nvidia/nemotron-3-embed-1b"
 
 
 def ask(system_prompt: str, user_message: str) -> str:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": system_prompt},
+            {"role": "system", "content": "/no_think\n\n" + system_prompt},
             {"role": "user", "content": user_message},
         ],
         temperature=0.3,
