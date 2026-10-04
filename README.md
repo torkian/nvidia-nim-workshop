@@ -125,7 +125,7 @@ HANDOUT.md         — 1-page student takeaway
 ## The workshop series
 
 1. **Build Your First AI App with NVIDIA NIM** — `notebook.ipynb` + `app.py`
-2. **Embedding-based RAG with NVIDIA NIM** — `part2_rag.py` (uses `nv-embedqa-e5-v5`)
+2. **Embedding-based RAG with NVIDIA NIM** — `part2_rag.py` (uses `nemotron-3-embed-1b`)
 3. **Guardrails — scoped prompt + grounding check** — `part3_guardrails.py`
 4. **Run NIM on Your Own GPU** — `part4_local_nim.py` (configurable endpoint via `NIM_BASE_URL`)
 5. **From Chatbot to Agent** — `part5_agent.py` (tool calling with NVIDIA Nemotron 49B)
