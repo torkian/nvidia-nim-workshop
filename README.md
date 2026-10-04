@@ -42,7 +42,7 @@ A tiny **campus assistant** that answers questions from a small knowledge base y
 ## Prerequisites (5 minutes before the workshop)
 
 1. **NVIDIA Developer account** — free: https://developer.nvidia.com/
-2. **API key** from the API Catalog — https://build.nvidia.com/ → pick any model → "Get API Key"
+2. **API key** from the API Catalog — https://build.nvidia.com/ → open any model → "Generate API Key"
 3. **One of these**:
    - Easiest: a Google account (we'll use Colab — zero install)
    - Or: Python 3.10+ locally

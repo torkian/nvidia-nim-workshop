@@ -28,14 +28,14 @@ client = OpenAI(
 )
 
 # Any model from https://build.nvidia.com/ works here.
-MODEL = "meta/llama-3.1-8b-instruct"
+MODEL = "nvidia/nemotron-3-super-120b-a12b"
 
 
 def ask(system_prompt: str, user_message: str) -> str:
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
-            {"role": "system", "content": system_prompt},
+            {"role": "system", "content": "/no_think\n\n" + system_prompt},
             {"role": "user", "content": user_message},
         ],
         temperature=0.3,
